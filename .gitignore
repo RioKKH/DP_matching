@@ -1,2 +1,5 @@
 src/.venv
 src/__pycache__
+src/*.dat
+*.png
+*.tar.gz

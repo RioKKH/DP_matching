@@ -26,11 +26,12 @@ def plot() -> None:
     xt, yt, mt, nt = load_datas()
     fig, ax = plt.subplots()
 
-    xt.plot(ax=ax, marker="o", alpha=0.8, label="x")
-    yt.plot(ax=ax, marker="o", alpha=0.8, label="y")
-    mt.plot(ax=ax, marker="o", alpha=0.8, label="on")
-    nt.plot(ax=ax, marker="o", alpha=0.8, label="off")
+    xt.plot(y="peak", ax=ax, marker="o", alpha=0.8, label="x")
+    yt.plot(y="peak", ax=ax, marker="o", alpha=0.8, label="y")
+    mt.plot(y="peak", ax=ax, marker="o", alpha=0.8, label="on")
+    nt.plot(y="peak", ax=ax, marker="o", alpha=0.8, label="off")
     plt.legend()
+    plt.grid(ls="dashed", color="gray", alpha=0.5)
 
     plt.show()
 
